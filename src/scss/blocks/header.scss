@@ -205,6 +205,12 @@
         padding: 0 10px;
       }
 
+      &.active {
+        .icon {
+          fill: #973B3A;
+        }
+      }
+
       &:hover {
         background-color: transparent;
         color: #973B3A;

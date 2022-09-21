@@ -94,7 +94,7 @@
             </div>
             <ul class="menu header__user">
                 <li class="menu__item">
-                    <button type="button" class="menu__link">
+                    <button type="button" class="menu__link" id="searchBtn">
                         <svg class="icon icon__search">
                             <use xlink:href="./images/icons.svg#search"></use>
                         </svg>
@@ -133,6 +133,17 @@
                 </li>
             </ul>
         </nav>
+        <div class="header__search search container">
+            <svg class="icon icon__search">
+                <use xlink:href="./images/icons.svg#search"></use>
+            </svg>
+            <input type="text" class="search__input" placeholder="Что вы ищете?">
+            <button class="search__btn" id="searchClose">
+                <svg class="icon icon__close">
+                    <use xlink:href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
     </header>
     <main>
     </main>
