@@ -1,0 +1,58 @@
+.icon {
+  &__facebook {
+    width: 6px;
+    height: 12px;
+    fill: #F2EBE5;
+
+  }
+
+  &__instagram {
+    width: 12px;
+    height: 12px;
+    fill: #F2EBE5;
+  }
+
+  &__youtube {
+    width: 10px;
+    height: 10px;
+    fill: #F2EBE5;
+  }
+
+  &__telegram {
+    width: 14px;
+    height: 12px;
+    fill: #F2EBE5;
+  }
+
+  &__search {
+    width: 18px;
+    height: 18px;
+    fill: #42313A;
+  }
+
+  &__heart {
+    width: 19px;
+    height: 18px;
+    stroke: #42313A;
+    stroke-width: 2px;
+    fill: none;
+  }
+
+  &__bag {
+    width: 16px;
+    height: 18px;
+    fill: #42313A;
+  }
+
+  &__user {
+    width: 18px;
+    height: 18px;
+    fill: #42313A;
+  }
+
+  &__card-decor {
+    width: 20px;
+    height: 25px;
+    fill: #656A25;
+  }
+}

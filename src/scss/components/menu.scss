@@ -1,0 +1,35 @@
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: 1170px) {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #42313A;
+    padding: 10px 8px;
+    transition: .3s;
+    border: none;
+    background: none;
+
+    &:hover {
+      background-color: #656A25;
+      color: #fff;
+    }
+  }
+}
