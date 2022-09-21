@@ -24,6 +24,12 @@
     fill: #F2EBE5;
   }
 
+  &__tiktok {
+    width: 12px;
+    height: 14px;
+    fill: #F2EBE5;
+  }
+
   &__search {
     width: 18px;
     height: 18px;
@@ -54,5 +60,32 @@
     width: 20px;
     height: 25px;
     fill: #656A25;
+  }
+
+  &__submit {
+    width: 21px;
+    height: 20px;
+    fill: #5F5258;
+    ;
+  }
+
+  &__call {
+    width: 21px;
+    height: 20px;
+    fill: #5F5258;
+    ;
+  }
+
+  &__social {
+    width: 21px;
+    height: 20px;
+    fill: #5F5258;
+    ;
+  }
+  &__keybord {
+    width: 15px;
+    height: 20px;
+    fill: #5F5258;
+    ;
   }
 }

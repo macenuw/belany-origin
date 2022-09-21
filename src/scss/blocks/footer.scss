@@ -1,1 +1,259 @@
-.footer {}
+.footer {
+  background-color: #35242D;
+
+  &__content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &--bottom {
+      border-top: 1px solid #42313A;
+
+      .footer__inner {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1120px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+
+    @media (max-width: 610px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+    }
+  }
+
+  &__col {
+    max-width: 276px;
+    width: 100%;
+
+    @media (max-width: 1120px) {
+      margin: 0 auto;
+    }
+
+    &--address-inner {
+      &:last-child {
+        text-align: right;
+
+        @media (max-width: 1120px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  & .logo__link {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #F2EBE5;
+    margin-bottom: 30px;
+  }
+
+  &__title-inner {
+    margin-bottom: 20px;
+
+    &--social {
+      text-align: right;
+
+      @media (max-width: 1120px) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #5F5258;
+    margin-bottom: 20px;
+
+    &--subsribe,
+    &--call,
+    &--social {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    border: none;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #42313A;
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: #F2EBE5;
+    transition: .3s;
+
+    &:focus {
+      background-color: #5F5258;
+      color: #F2EBE5;
+
+      &::placeholder {
+        color: #F2EBE5;
+      }
+    }
+
+    &::placeholder {
+      color: #42313A;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: #973B3A;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+
+    &:hover {
+      .icon__submit {
+        transform: rotate(-90deg);
+      }
+    }
+
+    .icon__submit {
+      fill: #F2EBE5;
+      transition: .3s;
+    }
+  }
+
+  &__call-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #973B3A;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #F2EBE5;
+    white-space: nowrap;
+    transition: .3s;
+
+    &:hover {
+      background-color: #c45654;
+    }
+
+    .icon__keybord {
+      fill: #F2EBE5;
+      margin-right: 10px;
+    }
+  }
+
+  &__social {
+    text-align: right;
+    justify-content: flex-end;
+
+    @media (max-width: 1120px) {
+      justify-content: flex-start;
+    }
+
+    .social__link {
+      width: 40px;
+      height: 40px;
+      background-color: #973B3A;
+      border-radius: 50%;
+      transition: .3s;
+
+      &:hover {
+        background-color: #656A25;
+        border-radius: 0;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #F2EBE5;
+  }
+
+  &__address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+
+    &--right {
+      text-align: right;
+
+      @media (max-width: 1120px) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__address-str {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #F2EBE5;
+    margin-bottom: 12px;
+  }
+
+  //copuright
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__copyright {
+    @media (max-width: 720px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__copyright,
+  &__privacy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #F8F2ED;
+  }
+}
