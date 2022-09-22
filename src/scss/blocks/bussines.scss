@@ -1,0 +1,21 @@
+.bussines {
+  .about-us__subtitle {
+    background-color: #973B3A;
+  }
+
+  .double-bg__left {
+    @media (max-width: 948px) {
+      width: 100%;
+      height: 70%;
+    }
+  }
+
+  .double-bg__right {
+    @media (max-width: 948px) {
+      width: 100%;
+      height: 50%;
+      top: auto;
+      bottom: 0;
+    }
+  }
+}

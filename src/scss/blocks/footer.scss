@@ -255,6 +255,11 @@
     font-size: 15px;
     line-height: 20px;
     color: #F8F2ED;
+
+    @media (max-width: 480px) {
+      text-align: center;
+    }
+
   }
 
   &__privacy {

@@ -1,0 +1,22 @@
+.double-bg {
+  height: 100%;
+  position: relative;
+
+  &__left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #F2EBE5;
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #42313A;
+  }
+}

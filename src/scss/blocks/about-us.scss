@@ -1,0 +1,174 @@
+.about-us {
+  &__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    width: 100%;
+    position: relative;
+
+    @media (max-width: 1170px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 948px) {
+      flex-direction: column;
+      padding: 25px;
+    }
+  }
+
+  &__left,
+  &__right {
+    max-width: 370px;
+
+    @media (max-width: 948px) {
+      max-width: 100%;
+    }
+  }
+
+  .double-bg__left {
+    @media (max-width: 948px) {
+      width: 100%;
+      height: 70%;
+    }
+  }
+
+  .double-bg__right {
+    @media (max-width: 948px) {
+      width: 100%;
+      height: 45%;
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &__left {
+    .about-us__text {
+      color: #F2EBE5;
+    }
+
+    &::before {
+      content: '';
+      top: 100px;
+      position: absolute;
+      left: 100px;
+      width: 60px;
+      height: 90%;
+      background-image: url('../images/about-us/decor-left.png');
+      background-repeat: no-repeat;
+      z-index: 20;
+
+      @media (max-width:1680px) {
+        display: none;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+
+    @media (max-width: 948px) {
+      padding: 0;
+    }
+
+    &::before {
+      content: '';
+      bottom: 100px;
+      position: absolute;
+      right: 100px;
+      width: 60px;
+      height: 275px;
+      background-image: url('../images/about-us/decor-left.png');
+      background-repeat: no-repeat;
+      z-index: 20;
+
+      @media (max-width:1680px) {
+        display: none;
+      }
+    }
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #F2EBE5;
+    background-color: #42313A;
+    padding: 2px;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #F2EBE5;
+    margin-bottom: 35px;
+
+    @media (max-width: 948px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img-inner {
+    min-width: 270px;
+    height: 320px;
+    margin: 0 100px;
+
+    @media (max-width: 1170px) {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 948px) {
+      width: 270px;
+      margin: 25px auto;
+      height: 170px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .about-us__text {
+      max-width: 270px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #42313A;
+  }
+}

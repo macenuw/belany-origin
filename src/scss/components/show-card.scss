@@ -1,0 +1,32 @@
+.show-card {
+  max-width: 270px;
+
+  &__inner {
+    width: 100%;
+    height: 370px;
+    margin-bottom: 30px;
+
+    @media (max-width:580px) {
+      height: 320px;
+    }
+    @media (max-width:480px) {
+      height: 260px;
+    }
+    @media (max-width:400px) {
+      height: 220px;
+    }
+    @media (max-width:350px) {
+      height: 180px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

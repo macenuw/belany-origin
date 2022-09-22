@@ -8,6 +8,12 @@
 
 
 @import 'blocks/header.scss';
+@import 'blocks/breadcrambs.scss';
+@import 'blocks/top-section.scss';
+@import 'blocks/popular.scss';
+@import 'blocks/about-us.scss';
+@import 'blocks/bussines.scss';
+@import 'blocks/new.scss';
 @import 'blocks/footer.scss';
 
 
@@ -15,3 +21,8 @@
 @import 'components/social.scss';
 @import 'components/menu.scss';
 @import 'components/search.scss';
+@import 'components/custom-title.scss';
+@import 'components/double-bg.scss';
+@import 'components/slider.scss';
+@import 'components/info.scss';
+@import 'components/show-card.scss';
