@@ -1,0 +1,158 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 270px;
+  height: 434px;
+
+  &__img-inner {
+    width: 270px;
+    height: 180px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px 0 15px;
+    height: 100%;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DED7D0;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #F2EBE5;
+    padding: 5px 13px;
+    background-color: #42313A;
+    margin-right: 15px;
+  }
+
+  .icon__flower-colors {
+    fill: #42313A;
+  }
+
+  &__colors {
+    display: flex;
+    align-items: flex-end;
+    margin-right: auto;
+  }
+
+  &__favorite,
+  &__colors-btn {
+    background-color: transparent;
+    border: 1px solid #DED7D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__colors-btn {
+    margin-right: 10px;
+  }
+
+  &__colors-amount {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #42313A;
+  }
+
+  &__text {
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #42313A;
+    margin-bottom: 15px;
+  }
+
+  &__article,
+  &__available {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &__article {
+    color: #42313A;
+  }
+
+  &__available {
+    color: #656A25;
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    width: 100%;
+    margin-top: auto;
+    border-top: 1px solid #DED7D0;
+  }
+
+  &__package {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #42313A;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    max-width: 115px;
+    border: 1px solid #F2EBE5;
+  }
+
+  &__btn {
+    padding: 15px;
+    color: #97383A;
+    line-height: 10px;
+  }
+
+  &__amount-input {
+    max-width: 40px;
+    border: none;
+    text-align: center;
+  }
+
+  &__card-btn {
+    display: block;
+    max-width: 115px;
+    width: 100%;
+  }
+
+  &__more-btn {
+    width: 100%;
+  }
+}

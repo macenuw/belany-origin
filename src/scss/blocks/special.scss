@@ -1,39 +1,17 @@
-.popular {
+.special {
   padding-top: 70px;
   padding-bottom: 70px;
 
-  &__title {}
-
-  &__subtitle {}
+  &__slider-inner {
+    display: flex;
+  }
 
   &__slider {
     position: relative;
   }
 
   &__slider-items {
-    width: inherit;
     overflow: hidden;
-  }
-
-  &__slider-inner {
-    display: flex;
-    padding: 0 10px;
-    overflow: hidden;
-    width: 1810px;
-  }
-
-  .show-card {
-    &:not(:last-child) {
-      margin-right: 30px;
-
-      @media (max-width:1440px) {
-        margin-right: 15px;
-      }
-
-      @media (max-width:480px) {
-        margin-right: 10px;
-      }
-    }
   }
 
   .slider__control {
@@ -49,8 +27,8 @@
     }
   }
 
-  .slider__current-slide {
-    color: #973B3A;
+  .product-card {
+    margin-right: 30px;
   }
 
   .slider__amount-slide {

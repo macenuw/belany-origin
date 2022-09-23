@@ -53,12 +53,9 @@ function sliderInit(sliderSelector, prevSelector, nextSelector, innerSelector, i
     } else if (slideNow > items.length) {
       slideNow = 1;
     }
-
-    console.log(dotsNow)
     dotsNow.forEach(dot => {
       dot.classList.remove('active');
     })
-    console.log(slideNow)
     dotsNow[slideNow - 1].classList.add('active')
     slideNowShow.textContent = `${slideNow < 10 ? `0${slideNow}`: slideNow}`;
   })

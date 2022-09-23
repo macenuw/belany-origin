@@ -111,6 +111,14 @@
     }
   }
 
+  &__mob-link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    color: #42313A;
+  }
+
   &__info {
     display: flex;
     align-items: center;
