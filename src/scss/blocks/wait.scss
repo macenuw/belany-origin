@@ -1,6 +1,10 @@
 .wait {
   padding: 70px 0;
 
+  @media (max-width:760px) {
+    padding: 25px;
+  }
+
   &__inner {
     border: 1px solid #F2EBE5;
     padding: 70px 0;
@@ -10,10 +14,22 @@
 
   &__subtitle {
     margin-bottom: 0;
+
+    @media (max-width:760px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
     margin-bottom: 20px;
+  }
+
+  &__title-dec {
+    color: #973B3A;
+
+    @media (max-width:760px) {
+      display: block;
+    }
   }
 
   .social {
