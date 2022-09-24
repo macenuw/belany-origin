@@ -21,12 +21,21 @@
 @import 'blocks/footer.scss';
 
 
-// catalog.html
-@import 'blocks/header.scss';
+// catalog.html---------------------------------------
+// @import 'blocks/header.scss';
 @import 'blocks/catalog.scss';
-@import 'blocks/breadcrambs.scss';
-@import 'blocks/top-section.scss';
-@import 'blocks/footer.scss';
+// @import 'blocks/breadcrambs.scss';
+// @import 'blocks/top-section.scss';
+// @import 'blocks/footer.scss';
+
+// catalog-flower-package.html -----------------------
+// @import 'blocks/header.scss';
+// @import 'blocks/breadcrambs.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/product-catalog.scss';
+@import 'blocks/package.scss';
+@import 'blocks/composition.scss';
+// @import 'blocks/footer.scss';
 
 @import 'components/social.scss';
 @import 'components/menu.scss';
@@ -37,3 +46,4 @@
 @import 'components/info.scss';
 @import 'components/show-card.scss';
 @import 'components/product-card.scss';
+@import 'components/category-filters.scss';

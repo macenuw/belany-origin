@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belany Интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__top-line ">
+      <button class="header__btn"><span class="header__btn-span"></span></button>
+      <div class="header__mob">
+        <ul class="header__mob-menu">
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-link">Новинки</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-link">Цветочная упаковка</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-link">Подарочная упаковка</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-link">Подарки и открытки</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-link">Товары для праздника</a>
+          </li>
+          <li class="header__mob-item">
+            <a href="#" class="header__mob-link">Каталог</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__top-inner container">
+        <ul class="header__info">
+          <li class="header__info-item">
+            понедельник - воскресенье
+          </li>
+          <li class="header__info-item">
+            8:00 AM - 19:00 PM
+          </li>
+          <li class="header__info-item">
+            <a href="tel:+380686231588" class="header__info-text header__info-text--hover">
+              +38 (068) 623-15-88
+            </a>
+          </li>
+        </ul>
+        <span class="header__info-text header__min-order">заказы от 300 грн</span>
+        <ul class="header__info-menu">
+          <li class="header__info-item">
+            <a href="#" class="header__info-text header__info-text--hover">Бонусы</a>
+          </li>
+          <li class="header__info-item">
+            <a href="#" class="header__info-text header__info-text--hover">Доставка и Оплата</a>
+          </li>
+          <li class="header__info-item">
+            <a href="#" class="header__info-text header__info-text--hover">Контакты</a>
+          </li>
+          <li class="header__info-item">
+            <ul class="social header__social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="icon icon__facebook">
+                    <use xlink:href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="icon icon__instagram">
+                    <use xlink:href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="icon icon__youtube">
+                    <use xlink:href="./images/icons.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="icon icon__telegram">
+                    <use xlink:href="./images/icons.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="header__bottom-line container">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#" class="menu__link">New</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Цветочная упаковка</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Подарочная упаковка</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Каталог</a>
+        </li>
+      </ul>
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img src="./images/logo.png" alt="Belany Интернет-магазин подароных упапковок" class="logo__img">
+        </a>
+      </div>
+      <ul class="menu header__user">
+        <li class="menu__item">
+          <button type="button" class="menu__link" id="searchBtn">
+            <svg class="icon icon__search">
+              <use xlink:href="./images/icons.svg#search"></use>
+            </svg>
+            <span class="header__item-name header__item-name--search">Поиск</span>
+          </button>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            <svg class="icon icon__heart">
+              <use xlink:href="./images/icons.svg#heart"></use>
+            </svg>
+            <span class="header__item-name">Избранное</span>
+          </a>
+        </li>
+        <li class="menu__item header__card">
+          <a href="#" class="menu__link">
+            <svg class="icon icon__bag">
+              <use xlink:href="./images/icons.svg#bag"></use>
+            </svg>
+            <span class="header__card-cost"><span class="header__card-price">0.00</span> &#8372;</span>
+          </a>
+          <div class="header__card-decor">
+            <svg class="icon icon__card-decor">
+              <use xlink:href="./images/icons.svg#card-decor"></use>
+            </svg>
+            <span class="header__card-amount">+</span>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            <svg class="icon icon__user">
+              <use xlink:href="./images/icons.svg#user"></use>
+            </svg>
+            <span class="header__join header__item-name">Войти</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__search search container">
+      <svg class="icon icon__search">
+        <use xlink:href="./images/icons.svg#search"></use>
+      </svg>
+      <input type="text" class="search__input" placeholder="Что вы ищете?">
+      <button class="search__btn" id="searchClose">
+        <svg class="icon icon__close">
+          <use xlink:href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!-- header end -->
+  <main>
+    <!-- breadcrambs -->
+    <div class="breadcrambs">
+      <ul class="breadcrambs__list container">
+        <li class="breadcrambs__item">
+          <a href="#" class="breadcrambs__link">Главная</a>
+        </li>
+        <li class="breadcrambs__item">
+          <a href="#" class="breadcrambs__link">Каталог</a>
+        </li>
+        <li class="breadcrambs__item">
+          <a href="#" class="breadcrambs__link">Цветочная упаковка</a>
+        </li>
+        <li class="breadcrambs__item">
+          <a href="#" class="breadcrambs__link">Коробки для цветов</a>
+        </li>
+      </ul>
+    </div>
+    <!-- breadcrambs end -->
+    <!-- promo  -->
+    <section class="promo promo--box container">
+      <div class="promo__inner">
+        <div class="promo__popular">
+          <div class="promo__info">
+            <p class="promo__category-text">Категория</p>
+            <h2 class="promo__category-open">Коробки для цветов</h2>
+            <a href="#" class="promo__back-catalog button">Вернуться к цветочной упаковке</a>
+          </div>
+        </div>
+        <div class="promo__img-inner">
+          <img src="./images/promo/promo-box.jpg" alt="" class="promo__img">
+        </div>
+      </div>
+    </section>
+    <!-- promo end  -->
+    <div class="product-catalog container">
+      <div class="category-filters">
+        <h4 class="category-filters__title">
+          Категории
+        </h4>
+        <ul class="category-filters__category">
+          <li class="category-filters__category-item">
+            <svg class="icon icon__new-category">
+              <use xlink:href="./images/icons.svg#new-category"></use>
+            </svg>
+            <span class="category-filters__category-name">Новинки</span>
+            <ul class="category-filters__subcategory-list">
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флизелин флористический</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Коробки для цветов</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Мешковина джутовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Оазис флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сетка флористическая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага Тишью
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька листовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька рулонная
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Ленты флористические
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фоамиран для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фетр флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сухоцветы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Прищепки и Топперы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага-креп
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Перья страуса
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Кашпо, вазоны и ящики
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Плетеные корзины
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флористические ножницы
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="category-filters__category-item">
+            <svg class="icon icon__flower-category">
+              <use xlink:href="./images/icons.svg#flower-category"></use>
+            </svg>
+            <span class="category-filters__category-name">Цветочная упаковка</span>
+            <ul class="category-filters__subcategory-list">
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флизелин флористический</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Коробки для цветов</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Мешковина джутовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Оазис флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сетка флористическая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага Тишью
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька листовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька рулонная
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Ленты флористические
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фоамиран для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фетр флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сухоцветы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Прищепки и Топперы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага-креп
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Перья страуса
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Кашпо, вазоны и ящики
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Плетеные корзины
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флористические ножницы
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="category-filters__category-item">
+            <svg class="icon icon__box-category">
+              <use xlink:href="./images/icons.svg#box-category"></use>
+            </svg>
+            <span class="category-filters__category-name">Подарочная упаковка</span>
+            <ul class="category-filters__subcategory-list">
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флизелин флористический</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Коробки для цветов</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Мешковина джутовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Оазис флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сетка флористическая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага Тишью
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька листовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька рулонная
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Ленты флористические
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фоамиран для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фетр флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сухоцветы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Прищепки и Топперы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага-креп
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Перья страуса
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Кашпо, вазоны и ящики
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Плетеные корзины
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флористические ножницы
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="category-filters__category-item">
+            <svg class="icon icon__bear-category">
+              <use xlink:href="./images/icons.svg#bear-category"></use>
+            </svg>
+            <span class="category-filters__category-name">Подарочная упаковка</span>
+            <ul class="category-filters__subcategory-list">
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флизелин флористический</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Коробки для цветов</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Мешковина джутовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Оазис флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сетка флористическая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага Тишью
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька листовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька рулонная
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Ленты флористические
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фоамиран для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фетр флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сухоцветы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Прищепки и Топперы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага-креп
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Перья страуса
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Кашпо, вазоны и ящики
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Плетеные корзины
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флористические ножницы
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="category-filters__category-item">
+            <svg class="icon icon__happy-category">
+              <use xlink:href="./images/icons.svg#happy-category"></use>
+            </svg>
+            <span class="category-filters__category-name">Подарочная упаковка</span>
+            <ul class="category-filters__subcategory-list">
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флизелин флористический</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Коробки для цветов</button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Мешковина джутовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Оазис флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сетка флористическая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага Тишью
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька листовая
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Калька рулонная
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Ленты флористические
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фоамиран для цветов
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Фетр флористический
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Сухоцветы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Прищепки и Топперы
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Бумага-креп
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Перья страуса
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Кашпо, вазоны и ящики
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Плетеные корзины
+                </button>
+              </li>
+              <li class="category-filters__subcategory-item">
+                <button class="category-filters__subcategory-btn">Флористические ножницы
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="product-catalog__catalog">
+        <div class="product-catalog__filters">
+          <div class="product-catalog__filters-item">
+            <p class="product-catalog__filters-subtitle">Фильтры</p>
+            <div class="product-catalog__filters-inner">
+              <label for="sales" class="product-catalog__filters-label">
+                <input type="checkbox" class="product-catalog__filters-checkbox checkbox" id="sales">
+                <span class="product-catalog__filters-name">Со скидкой</span>
+              </label>
+              <label for="collection" class="product-catalog__filters-label">
+                <input type="checkbox" class="product-catalog__filters-checkbox checkbox" id="collection">
+                <span class="product-catalog__filters-name">Коллекции</span>
+              </label>
+            </div>
+          </div>
+          <div class="product-catalog__filters-item">
+            <p class="product-catalog__filters-subtitle">Цена</p>
+            <div class="product-catalog__filters-inner">
+              <label for="minPrice" class="product-catalog__filters-label">
+                <span class="product-catalog__filters-name product-catalog__filters-name--mr">от</span>
+                <input type="number" class="product-catalog__filters-input" id="minPrice">
+              </label>
+              <label for="maxPrice" class="product-catalog__filters-label">
+                <span class="product-catalog__filters-name product-catalog__filters-name--mr">до</span>
+                <input type="number" class="product-catalog__filters-input" id="maxPrice">
+              </label>
+            </div>
+          </div>
+          <div class="product-catalog__filters-item">
+            <p class="product-catalog__filters-subtitle">Сортировка</p>
+            <div class="product-catalog__filters-inner">
+              <label for="sort" class="product-catalog__filters-label">
+                <select name="sort" id="sort" class="product-catalog__filters-select select">
+                  <option value="standart">По умолчанию</option>
+                  <option value="standart">По дате поступления</option>
+                  <option value="standart">По популярности</option>
+                  <option value="standart">От дешевых к дорогим</option>
+                  <option value="standart">От дорогих к дешевым</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="product-catalog__grid">
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product1.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">88 &#8372;</div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Коробка для цветов
+                  <br>«With gold love»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <div class="product-card__amount">
+                  <span class="product-card__btn product-card__btn--minus">-</span>
+                  <input type="text" class="product-card__amount-input" value="1">
+                  <span class="product-card__btn product-card__btn--plus">+</span>
+                </div>
+                <button class="product-card__card-btn button">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product2.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">188 &#8372;</div>
+                <div class="product-card__colors">
+                  <button class="product-card__colors-btn">
+                    <svg class="icon icon__flower-colors">
+                      <use xlink:href="./images/icons.svg#flower-colors"></use>
+                    </svg>
+                  </button>
+                  <span class="product-card__colors-amount">18 цветов</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Пакеты под бутылку<br>«More hearts»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <button class="product-card__more-btn button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product3.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">88 &#8372;</div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Пакеты под бутылку<br>«More hearts»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <div class="product-card__amount">
+                  <span class="product-card__btn product-card__btn--minus">-</span>
+                  <input type="text" class="product-card__amount-input" value="1">
+                  <span class="product-card__btn product-card__btn--plus">+</span>
+                </div>
+                <button class="product-card__card-btn button">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product4.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">188 &#8372;</div>
+                <div class="product-card__colors">
+                  <button class="product-card__colors-btn">
+                    <svg class="icon icon__flower-colors">
+                      <use xlink:href="./images/icons.svg#flower-colors"></use>
+                    </svg>
+                  </button>
+                  <span class="product-card__colors-amount">18 цветов</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Керамическая чашка
+                  <br>«Ribbon»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <button class="product-card__more-btn button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product5.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">88 &#8372;</div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Калька для цветов «Opacity»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <div class="product-card__amount">
+                  <span class="product-card__btn product-card__btn--minus">-</span>
+                  <input type="text" class="product-card__amount-input" value="1">
+                  <span class="product-card__btn product-card__btn--plus">+</span>
+                </div>
+                <button class="product-card__card-btn button">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product6.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">188 &#8372;</div>
+                <div class="product-card__colors">
+                  <button class="product-card__colors-btn">
+                    <svg class="icon icon__flower-colors">
+                      <use xlink:href="./images/icons.svg#flower-colors"></use>
+                    </svg>
+                  </button>
+                  <span class="product-card__colors-amount">18 цветов</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Открытки «Soumissionner»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <button class="product-card__more-btn button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product1.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">88 &#8372;</div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Коробка для цветов
+                  <br>«With gold love»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <div class="product-card__amount">
+                  <span class="product-card__btn product-card__btn--minus">-</span>
+                  <input type="text" class="product-card__amount-input" value="1">
+                  <span class="product-card__btn product-card__btn--plus">+</span>
+                </div>
+                <button class="product-card__card-btn button">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product5.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">88 &#8372;</div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Калька для цветов «Opacity»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <div class="product-card__amount">
+                  <span class="product-card__btn product-card__btn--minus">-</span>
+                  <input type="text" class="product-card__amount-input" value="1">
+                  <span class="product-card__btn product-card__btn--plus">+</span>
+                </div>
+                <button class="product-card__card-btn button">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product6.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">188 &#8372;</div>
+                <div class="product-card__colors">
+                  <button class="product-card__colors-btn">
+                    <svg class="icon icon__flower-colors">
+                      <use xlink:href="./images/icons.svg#flower-colors"></use>
+                    </svg>
+                  </button>
+                  <span class="product-card__colors-amount">18 цветов</span>
+                </div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Открытки «Soumissionner»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <button class="product-card__more-btn button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__img-inner">
+              <img src="./images/products/product1.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__action">
+                <div class="product-card__price">88 &#8372;</div>
+                <button class="product-card__favorite">
+                  <svg class="icon icon__heart">
+                    <use xlink:href="./images/icons.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product-card__text">
+                <h4 class="product-card__name">Коробка для цветов
+                  <br>«With gold love»</h4>
+                <span class="product-card__article">артикул: 01-100</span>
+                <span class="product-card__available">в наличии</span>
+              </div>
+              <div class="product-card__btns">
+                <span class="product-card__package">в упаковке: 1 штука</span>
+                <div class="product-card__amount">
+                  <span class="product-card__btn product-card__btn--minus">-</span>
+                  <input type="text" class="product-card__amount-input" value="1">
+                  <span class="product-card__btn product-card__btn--plus">+</span>
+                </div>
+                <button class="product-card__card-btn button">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__control">
+          <div class="slider__nav">
+            <span class="slider__current-slide">01</span>
+            <ul class="slider__dots">
+              <li class="slider__dot"></li>
+              <li class="slider__dot"></li>
+              <li class="slider__dot"></li>
+              <li class="slider__dot"></li>
+              <li class="slider__dot"></li>
+            </ul>
+            <span class="slider__amount-slide">/06</span>
+          </div>
+          <div class="slider__btns">
+            <button class="slider__btn slider__btn--prev">
+              <svg class="icon icon__arrow-left">
+                <use xlink:href="./images/icons.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="slider__btn slider__btn--next">
+              <svg class="icon icon__arrow-right">
+                <use xlink:href="./images/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bussines package">
+      <div class="double-bg">
+        <div class="container">
+          <div class="about-us__content">
+            <div class="about-us__left">
+              <span class="about-us__subtitle">О категории</span>
+              <h2 class="about-us__title">Коробки для цветов
+                <p class="about-us__text">выбираем лучшее предложение на рынке</p>
+              </h2>
+
+              <p class="about-us__text">Для такого универсального подарка, как цветы, требуется соответствующая
+                «огранка» - то, что позволит подчеркнуть их красоту. Подарочная упаковка может быть выполнена из
+                различных материалов, в виде разнообразных форм,
+                и окрашены она может быть во всевозможные цвета и орнаменты.
+              </p>
+            </div>
+            <div class="about-us__img-inner">
+              <img src="./images/bussines/bussines2.jpg" alt="" class="about-us__img">
+            </div>
+            <div class="about-us__right">
+              <p class="about-us__text">Для больших букетов мода диктует условия использования таких товаров, как
+                оригинальные коробки для цветов.</p>
+              <p class="about-us__text">Они могут быть не только овальными, а и круглыми, выполненными в форме трапеций
+                и конусов.
+              </p>
+              <p class="about-us__text">Часто такая упаковка позволяет сделать срок сохранности композиции из флоры
+                более продолжительным – внутри нее можно установить специальные конструкции из полимеров, которые
+                эффективно удерживают влагу.
+              </p>
+              <p class="about-us__text">Интернет-магазин «Belany» предлагает вам приобрести коробки для цветов оптом,
+                благодаря чему декорирование ваших проектов будет реализовано на самом высоком уровне. Современные
+                тенденции оформления как небольших букетов, так и грандиозных мероприятий предполагают использование
+                флористами различных текстур и материалов – именно такие товары мы представили на сайте в большом
+                ассортименте.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="double-bg__left" style="background-color: #42313A"></div>
+        <div class="double-bg__right" style="background-color: #F2EBE5"></div>
+      </div>
+    </section>
+    <section class="range composition">
+      <div class="container">
+        <div class="range__inner">
+          <h4 class="range__subtitle title">Купить цветочные коробки оптом от «Belany»</h4>
+          <div class="custom-title">
+            <h2 class="custom-title__title composition__title subtitle">Почему мы?</h2>
+            <div class="custom-title__decor custom-title__decor--left"></div>
+            <div class="custom-title__decor custom-title__decor--right"></div>
+          </div>
+          <div class="range__decor">
+            <svg class="icon icon__flower">
+              <use xlink:href="./images/icons.svg#flower"></use>
+            </svg>
+          </div>
+          <div class="composition__info">
+            <p class="composition__text">
+              Мы уверены, что наша продукция вызовет у вас и у ваших розничных клиентов восторг! Все варианты упаковок
+              для цветов подобраны со вкусом и знанием дела. Эстетичность и качество материалов – на первом месте. Будь
+              то цветочная коробка с ручками или без, она будет прочной и презентабельной. Преимущества сотрудничества с
+              нашей компанией:
+            </p>
+            <div class="composition__plus">
+              <ul class="composition__list">
+                <li class="composition__item">выбор размеров и комплектаций товарных позиций</li>
+                <li class="composition__item">различные оттенки и рисунки изделий</li>
+                <li class="composition__item">цены на цветочные коробки – лучшие в Украине </li>
+                <li class="composition__item">быстрая доставка из Одессы в любой уголок страны</li>
+                <li class="composition__item">предельное внимание к каждому заказу независимо от суммы покупок</li>
+                <li class="composition__item">постоянные скидки и акции</li>
+                <li class="composition__item">регулярное появление новинок</li>
+                <li class="composition__item">большой каталог наименований упаковки для цветов.</li>
+              </ul>
+            </div>
+            <div class="composition__flower">
+              <p class="composition__text">
+                Делая заказ онлайн, вы можете отредактировать, ознакомиться с ценой, выбрать наиболее подходящую.
+                Обязательно почитайте отзывы – наши клиенты с удовольствием делятся впечатлениями от сотрудничества с
+                компанией «Belany». Поспешите купить коробку для цветов на свой вкус. Звоните и пишите по всем вопросам!
+              </p>
+              <p class="composition__text">
+                Заказывайте коробки для цветов оптом в интернет магазине Belany (Одесса, 7 км) с доставкой в город Киев,
+                Харьков, Днепропетровск, Запорожье, Львов, Кривой Рог, Николаев, Мариуполь, Винница, Херсон, Полтава,
+                Чернигов, Черкассы, Житомир, Сумы, Хмельницкий, Черновцы, Ровно, Днепродзержинск и по всей Украине!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__content footer__content--top">
+      <div class="footer__inner container">
+        <div class="footer__col logo">
+          <a href="#" class="logo__link">
+            <img src="./images/logo-white.png" alt="Belany Интернет-магазин подароных упапковок" class="logo__img">
+          </a>
+          <p class="footer__text">
+            Оптовый магазин цветочной
+            и подарочной упаковки
+          </p>
+        </div>
+        <div class="footer__col footer__col--subscribe">
+          <div class="footer__title-inner footer__title-inner--subsribe">
+            <svg class="icon icon__submit">
+              <use xlink:href="./images/icons.svg#submit"></use>
+            </svg>
+            <h4 class="footer__title">Подписка</h4>
+          </div>
+          <p class="footer__text">
+            Подпишитесь на рассылку и всегда будьте в курсе новых поступлений на нашем сайте
+          </p>
+          <form class="footer__form" action="#">
+            <input type="email" class="footer__input" required placeholder="Ваш e-mail">
+            <button class="footer__btn">
+              <svg class="icon icon__submit">
+                <use xlink:href="./images/icons.svg#submit"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="footer__col footer__col--call">
+          <div class="footer__title-inner footer__title-inner--call">
+            <svg class="icon icon__call">
+              <use xlink:href="./images/icons.svg#call"></use>
+            </svg>
+            <h4 class="footer__title">Нужна помощь?</h4>
+            <p class="footer__text">
+              Если у вас есть вопросы, воспользуйтесь пожалуйста нашей горячей линией
+            </p>
+            <a href="tel:+380686231588" class="footer__call-link">
+              <span>
+                <svg class="icon icon__keybord">
+                  <use xlink:href="./images/icons.svg#keybord"></use>
+                </svg>
+              </span>
+              <span>
+                +38 (068) 623-15-88
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col footer__col--social">
+          <div class="footer__title-inner footer__title-inner--social">
+            <svg class="icon icon__social">
+              <use xlink:href="./images/icons.svg#social"></use>
+            </svg>
+            <h4 class="footer__title">Социальные сети</h4>
+          </div>
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="icon icon__facebook">
+                  <use xlink:href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="icon icon__instagram">
+                  <use xlink:href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="icon icon__youtube">
+                  <use xlink:href="./images/icons.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="icon icon__telegram">
+                  <use xlink:href="./images/icons.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="icon icon__tiktok">
+                  <use xlink:href="./images/icons.svg#tiktok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__content footer__content--bottom">
+      <div class="footer__inner container">
+        <div class="footer__col footer__col--menu">
+          <h4 class="footer__title">Основные категории</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Цветочная упаковка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Подарочная упаковка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Подарки и открытки</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Для праздника</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Товары со скидками</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--client">
+          <h4 class="footer__title">Для клиентов</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Доставка и оплата</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Программа скидок</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--address-inner">
+          <h4 class="footer__title">Магазин в Одессе:</h4>
+          <address class="footer__address">
+            <span class="footer__address-str">7 км. 5-я площадка Магазин №677</span>
+            <span class="footer__address-str">Пн - Вс: 07:00 - 14:00</span>
+            <span class="footer__address-str">Пятница - Выходной</span>
+            <a href="tel:+380508893807" class="footer__address-str">+38 (050) 889-38-07</a>
+            <a href="mailto:belany.shop@gmail.com" class="footer__address-str">belany.shop@gmail.com</a>
+          </address>
+        </div>
+        <div class="footer__col footer__col--address-inner">
+          <h4 class="footer__title">Магазин в Киеве:</h4>
+          <address class="footer__address footer__address--right">
+            <span class="footer__address-str">Верхний Вал 16/4</span>
+            <span class="footer__address-str">Пн - Вс: 08:00 - 19:00</span>
+            <span class="footer__address-str">Пятница - Выходной</span>
+            <a href="tel:+380636433353" class="footer__address-str">+38 (063) 643-33-53</a>
+            <a href="mailto:hello@belany.com.ua" class="footer__address-str">hello@belany.com.ua</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer__copy container">
+        <span class="footer__copyright">Copyright © 2015-2020 Belany.com.ua / Ukraine. All rights
+          reserved</span>
+        <a href="#" class="footer__privacy">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
