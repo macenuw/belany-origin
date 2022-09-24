@@ -6,7 +6,7 @@
 @import 'global/global';
 
 
-
+// index.html
 @import 'blocks/header.scss';
 @import 'blocks/breadcrambs.scss';
 @import 'blocks/top-section.scss';
@@ -17,9 +17,16 @@
 @import 'blocks/special.scss';
 @import 'blocks/range.scss';
 @import 'blocks/wait.scss';
+@import 'blocks/catalog.scss';
 @import 'blocks/footer.scss';
 
 
+// catalog.html
+@import 'blocks/header.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/breadcrambs.scss';
+@import 'blocks/top-section.scss';
+@import 'blocks/footer.scss';
 
 @import 'components/social.scss';
 @import 'components/menu.scss';

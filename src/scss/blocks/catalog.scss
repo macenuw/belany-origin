@@ -1,0 +1,32 @@
+.catalog {
+  padding: 40px 10px 70px;
+
+  &__category {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    max-width: 1570px;
+    margin: 0 auto;
+
+    @media (max-width:920px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+    }
+  }
+
+  .show-card {
+    max-width: 100%;
+
+    &__inner {
+      height: 290px;
+
+      @media (max-width:920px) {
+        height: 220px;
+      }
+
+      @media (max-width:440px) {
+        height: 180px;
+      }
+    }
+  }
+}
