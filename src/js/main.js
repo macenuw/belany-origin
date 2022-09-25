@@ -187,3 +187,34 @@ try {
 
 
 $('.select, .checkbox').styler();
+try {
+  $('.product__slider-show').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.product__slider-control',
+    responsive: [{
+      breakpoint: 1170,
+      settings: {
+        arrows: true,
+      }
+    }, ],
+  });
+  $('.product__slider-control').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    asNavFor: '.product__slider-show',
+    vertical: true,
+    focusOnSelect: true,
+    responsive: [{
+      breakpoint: 1460,
+      settings: {
+        vertical: false,
+        arrows: true,
+      }
+    }, ],
+  });
+} catch (error) {};
