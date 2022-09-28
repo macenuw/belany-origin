@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belany Интернет-магазин</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css">
 </head>
 
 <body>
@@ -203,6 +205,10 @@
     <symbol id="bank" viewBox="0 0 20 20">
       <path d="M5 9V14H7V9H5ZM9 9V14H11.1053L11 9H9ZM3 17H17V15H3V17ZM13 9V14H15V9H13ZM10 3L3 7V8H17V7L10 3Z" />
     </symbol>
+    <symbol id="delete" viewBox="0 0 14 16">
+      <path
+        d="M5.44444 12.8C5.65072 12.8 5.84855 12.7157 5.99442 12.5657C6.14028 12.4157 6.22222 12.2122 6.22222 12V7.2C6.22222 6.98783 6.14028 6.78434 5.99442 6.63432C5.84855 6.48429 5.65072 6.4 5.44444 6.4C5.23816 6.4 5.04033 6.48429 4.89447 6.63432C4.74861 6.78434 4.66667 6.98783 4.66667 7.2V12C4.66667 12.2122 4.74861 12.4157 4.89447 12.5657C5.04033 12.7157 5.23816 12.8 5.44444 12.8ZM13.2222 3.2H10.1111V2.4C10.1111 1.76348 9.86528 1.15303 9.42769 0.702944C8.99011 0.252856 8.39662 0 7.77778 0H6.22222C5.60338 0 5.00989 0.252856 4.57231 0.702944C4.13472 1.15303 3.88889 1.76348 3.88889 2.4V3.2H0.777778C0.571498 3.2 0.373667 3.28429 0.227806 3.43431C0.0819442 3.58434 0 3.78783 0 4C0 4.21217 0.0819442 4.41566 0.227806 4.56569C0.373667 4.71571 0.571498 4.8 0.777778 4.8H1.55556V13.6C1.55556 14.2365 1.80139 14.847 2.23897 15.2971C2.67656 15.7471 3.27005 16 3.88889 16H10.1111C10.7299 16 11.3234 15.7471 11.761 15.2971C12.1986 14.847 12.4444 14.2365 12.4444 13.6V4.8H13.2222C13.4285 4.8 13.6263 4.71571 13.7722 4.56569C13.9181 4.41566 14 4.21217 14 4C14 3.78783 13.9181 3.58434 13.7722 3.43431C13.6263 3.28429 13.4285 3.2 13.2222 3.2ZM5.44444 2.4C5.44444 2.18783 5.52639 1.98434 5.67225 1.83431C5.81811 1.68429 6.01594 1.6 6.22222 1.6H7.77778C7.98406 1.6 8.18189 1.68429 8.32775 1.83431C8.47361 1.98434 8.55556 2.18783 8.55556 2.4V3.2H5.44444V2.4ZM10.8889 13.6C10.8889 13.8122 10.8069 14.0157 10.6611 14.1657C10.5152 14.3157 10.3174 14.4 10.1111 14.4H3.88889C3.68261 14.4 3.48478 14.3157 3.33892 14.1657C3.19306 14.0157 3.11111 13.8122 3.11111 13.6V4.8H10.8889V13.6ZM8.55556 12.8C8.76184 12.8 8.95967 12.7157 9.10553 12.5657C9.25139 12.4157 9.33333 12.2122 9.33333 12V7.2C9.33333 6.98783 9.25139 6.78434 9.10553 6.63432C8.95967 6.48429 8.76184 6.4 8.55556 6.4C8.34928 6.4 8.15145 6.48429 8.00558 6.63432C7.85972 6.78434 7.77778 6.98783 7.77778 7.2V12C7.77778 12.2122 7.85972 12.4157 8.00558 12.5657C8.15145 12.7157 8.34928 12.8 8.55556 12.8Z" />
+    </symbol>
   </svg>
 
   <header class="header">
@@ -372,631 +378,246 @@
           <a href="#" class="breadcrambs__link">Главная</a>
         </li>
         <li class="breadcrambs__item">
-          <a href="#" class="breadcrambs__link">Каталог</a>
+          <a href="#" class="breadcrambs__link">Корзина</a>
         </li>
       </ul>
     </div>
     <!-- breadcrambs end -->
-    <section class="catalog">
+    <section class="order">
       <div class="container">
-        <h4 class="catalog__title title">Каталог товаров</h4>
-        <h2 class="catalog__subtitle subtitle">Основные категории</h2>
-        <div class="catalog__category">
-          <div class="show-card">
-            <div class="show-card__inner">
-              <img src="./images/catalog-category/category1.jpg" alt="" class="show-card__img">
-            </div>
-            <a href="#" class="show-card__btn button">Цветочная упаковка</a>
-          </div>
-          <div class="show-card">
-            <div class="show-card__inner">
-              <img src="./images/catalog-category/category2.jpg" alt="" class="show-card__img">
-            </div>
-            <a href="#" class="show-card__btn button">Подарочная упаковка</a>
-          </div>
-          <div class="show-card">
-            <div class="show-card__inner">
-              <img src="./images/catalog-category/category3.jpg" alt="" class="show-card__img">
-            </div>
-            <a href="#" class="show-card__btn button">Подарки и открытки</a>
-          </div>
-          <div class="show-card">
-            <div class="show-card__inner">
-              <img src="./images/catalog-category/category4.jpg" alt="" class="show-card__img">
-            </div>
-            <a href="#" class="show-card__btn button">Все для праздника</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- top-slider -->
-    <div class="top-section">
-      <div class="top-section__inner">
-        <div class="top-section__slider container">
-          <div class="top-section__slider slider">
-            <div class="slider__item">
-              <div class="double-bg">
-                <div class="top-section__item">
-                  <div class="top-section__info">
-                    <span class="top-section__subtitle">Новое послупление</span>
-                    <h1 class="top-section__title">MaGIC<br>
-                      SPRING<br>
-                      2021</h1>
-                    <div class="top-section__date">1 марта 2022</div>
-                  </div>
-                  <div class="top-section__img-inner">
-                    <img src="./images/top-section/product1.png" alt="" class="top-section__img">
-                    <span class="top-section__cost">210 &#8372;</span>
-                  </div>
-                  <h3 class="top-section__name">Корзины <br>плетёные</h3>
-                </div>
-                <div class="double-bg__left" style="background-color: #F2EBE5"></div>
-                <div class="double-bg__right" style="background-color: #42313A"></div>
+        <div class="order__wrapper">
+          <div class="order__info">
+            <h2 class="order__title">Оформление заказа</h2>
+            <div class="order__product">
+              <div class="order__product-img-inner">
+                <img src="./images/products/product2.jpg" alt="" class="order__product-img">
               </div>
-            </div>
-            <div class="slider__item">
-              <div class="double-bg">
-                <div class="top-section__item">
-                  <div class="top-section__info">
-                    <span class="top-section__subtitle">Новое послупление</span>
-                    <h2 class="top-section__title">MaGIC<br>
-                      SPRING<br>
-                      2021</h2>
-                    <div class="top-section__date">1 марта 2022</div>
+              <div class="order__product-info">
+                <h3 class="order__product-name">Тут будет название данного <br> товара в две строки</h3>
+                <span class="order__product-article">артикул: 01-1000</span>
+                <div class="order__product-action">
+                  <div class="order__product-colors">
+                    <button class="order__product-btn">
+                      <svg class="icon icon__flower-colors">
+                        <use xlink:href="#flower-colors"></use>
+                      </svg>
+                    </button>
+                    <span class="order__product-color-text">
+                      <span class="order__product-color-mob">
+                        Коллекция:
+                      </span>
+                      <span class="order__product-accent">
+                        18 цветов
+                      </span>
+                    </span>
                   </div>
-                  <div class="top-section__img-inner">
-                    <img src="./images/top-section/product1.png" alt="" class="top-section__img">
-                    <span class="top-section__cost">210 &#8372;</span>
-                  </div>
-                  <h3 class="top-section__name">Корзины <br>плетёные</h3>
-                </div>
-                <div class="double-bg__left" style="background-color: #F2EBE5"></div>
-                <div class="double-bg__right" style="background-color: #42313A"></div>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="double-bg">
-                <div class="top-section__item">
-                  <div class="top-section__info">
-                    <span class="top-section__subtitle">Новое послупление</span>
-                    <h2 class="top-section__title">MaGIC<br>
-                      SPRING<br>
-                      2021</h2>
-                    <div class="top-section__date">1 марта 2022</div>
-                  </div>
-                  <div class="top-section__img-inner">
-                    <img src="./images/top-section/product1.png" alt="" class="top-section__img">
-                    <span class="top-section__cost">210 &#8372;</span>
-                  </div>
-                  <h3 class="top-section__name">Корзины <br>плетёные</h3>
-                </div>
-                <div class="double-bg__left" style="background-color: #F2EBE5"></div>
-                <div class="double-bg__right" style="background-color: #42313A"></div>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="double-bg">
-                <div class="top-section__item">
-                  <div class="top-section__info">
-                    <span class="top-section__subtitle">Новое послупление</span>
-                    <h2 class="top-section__title">MaGIC<br>
-                      SPRING<br>
-                      2021</h2>
-                    <div class="top-section__date">1 марта 2022</div>
-                  </div>
-                  <div class="top-section__img-inner">
-                    <img src="./images/top-section/product1.png" alt="" class="top-section__img">
-                    <span class="top-section__cost">210 &#8372;</span>
-                  </div>
-                  <h3 class="top-section__name">Корзины <br>плетёные</h3>
-                </div>
-                <div class="double-bg__left" style="background-color: #F2EBE5"></div>
-                <div class="double-bg__right" style="background-color: #42313A"></div>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="double-bg">
-                <div class="top-section__item">
-                  <div class="top-section__info">
-                    <span class="top-section__subtitle">Новое послупление</span>
-                    <h2 class="top-section__title">MaGIC<br>
-                      SPRING<br>
-                      2021</h2>
-                    <div class="top-section__date">1 марта 2022</div>
-                  </div>
-                  <div class="top-section__img-inner">
-                    <img src="./images/top-section/product1.png" alt="" class="top-section__img">
-                    <span class="top-section__cost">210 &#8372;</span>
-                  </div>
-                  <h3 class="top-section__name">Корзины <br>плетёные</h3>
-                </div>
-                <div class="double-bg__left" style="background-color: #F2EBE5"></div>
-                <div class="double-bg__right" style="background-color: #42313A"></div>
-              </div>
-            </div>
-            <div class="slider__control">
-              <div class="slider__nav">
-                <span class="slider__current-slide">01</span>
-                <ul class="slider__dots">
-                </ul>
-                <span class="slider__amount-slide">/06</span>
-              </div>
-              <div class="slider__btns">
-                <button class="slider__btn slider__btn--prev">
-                  <svg class="icon icon__arrow-left">
-                    <use xlink:href="#arrow-left"></use>
-                  </svg>
-                </button>
-                <button class="slider__btn slider__btn--next">
-                  <svg class="icon icon__arrow-right">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- top-slider end -->
-
-    <!-- special start  -->
-    <section class="special container">
-      <h2 class="special__title title">Belany рекомендует</h2>
-      <h3 class="special__subtitle subtitle">Специально для вас</h3>
-      <div class="special__slider-inner">
-        <div class="special__control">
-          <span class="slider__current-slide">01</span>
-          <span class="slider__amount-slide">/07</span>
-        </div>
-        <div class="special__slider">
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product1.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Коробка для цветов
-                  <br>«With gold love»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
-                </div>
-                <button class="product-card__card-btn button">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product2.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">188 &#8372;</div>
-                <div class="product-card__colors">
-                  <button class="product-card__colors-btn">
-                    <svg class="icon icon__flower-colors">
-                      <use xlink:href="#flower-colors"></use>
+                  <button class="order__product-btn order__product-btn--favorite">
+                    <svg class="icon icon__heart">
+                      <use xlink:href="#heart"></use>
                     </svg>
                   </button>
-                  <span class="product-card__colors-amount">18 цветов</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Пакеты под бутылку<br>«More hearts»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <button class="product-card__more-btn button">Подробнее</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product3.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Пакеты под бутылку<br>«More hearts»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
-                </div>
-                <button class="product-card__card-btn button">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product4.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">188 &#8372;</div>
-                <div class="product-card__colors">
-                  <button class="product-card__colors-btn">
-                    <svg class="icon icon__flower-colors">
-                      <use xlink:href="#flower-colors"></use>
+                  <button class="order__product-btn">
+                    <svg class="icon icon__delete">
+                      <use xlink:href="#delete"></use>
                     </svg>
                   </button>
-                  <span class="product-card__colors-amount">18 цветов</span>
                 </div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Керамическая чашка
-                  <br>«Ribbon»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <button class="product-card__more-btn button">Подробнее</button>
               </div>
             </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product5.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
+            <div class="table table--order">
+              <div class="table__row table__row--title">
+                <div class="table__id">#</div>
+                <div class="table__color">Цвет</div>
+                <div class="table__article">Артикул</div>
+                <div class="table__price">Цена</div>
+                <div class="table__amount">Количество в заказ</div>
+                <div class="table__sum">Сумма</div>
+                <div class="table__hidden" data-trigger="table-trigger">
+                  <svg class="icon icon__select-arrow">
+                    <use xlink:href="#select-arrow"></use>
                   </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Калька для цветов «Opacity»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
                 </div>
-                <button class="product-card__card-btn button">В корзину</button>
               </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product6.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">188 &#8372;</div>
-                <div class="product-card__colors">
-                  <button class="product-card__colors-btn">
-                    <svg class="icon icon__flower-colors">
-                      <use xlink:href="#flower-colors"></use>
+              <div class="table__row table__row--trigger" data-trigger="table-trigger">
+                <span class="table__trigger">Подробная информация</span>
+                <svg class="icon icon__select-arrow">
+                  <use xlink:href="#select-arrow"></use>
+                </svg>
+              </div>
+              <div class="table__forShow">
+                <div class="table__row">
+                  <div class="table__id">001</div>
+                  <div class="table__color">
+                    <div class="table__color-img-inner">
+                      <img src="./images/colors/color1.jpg" alt="" class="table__color-img">
+                    </div>
+                  </div>
+                  <div class="table__article">SW-01-135</div>
+                  <div class="table__price"><span class="table__mob-info">Цена:</span> 188 ₴</div>
+                  <div class="table__amount">
+                    <label class="product__label">
+                      <button class="product__minus">-</button>
+                      <input type="number" class="product__input" value="1">
+                      <button class="product__plus">+</button>
+                    </label>
+                  </div>
+                  <div class="table__sum"><span class="table__mob-info">Сумма:</span> 188 ₴</div>
+                  <div class="table__delete">
+                    <svg class="icon icon__delete">
+                      <use xlink:href="#delete"></use>
                     </svg>
-                  </button>
-                  <span class="product-card__colors-amount">18 цветов</span>
+                  </div>
                 </div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
+                <div class="table__row">
+                  <div class="table__id">001</div>
+                  <div class="table__color">
+                    <div class="table__color-img-inner">
+                      <img src="./images/colors/color2.jpg" alt="" class="table__color-img">
+                    </div>
+                  </div>
+                  <div class="table__article">SW-01-135</div>
+                  <div class="table__price"><span class="table__mob-info">Цена:</span> 188 ₴</div>
+                  <div class="table__amount">
+                    <label class="product__label">
+                      <button class="product__minus">-</button>
+                      <input type="number" class="product__input" value="1">
+                      <button class="product__plus">+</button>
+                    </label>
+                  </div>
+                  <div class="table__sum"><span class="table__mob-info">Сумма:</span> 188 ₴</div>
+                  <div class="table__delete">
+                    <svg class="icon icon__delete">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__id">001</div>
+                  <div class="table__color">
+                    <div class="table__color-img-inner">
+                      <img src="./images/colors/color3.jpg" alt="" class="table__color-img">
+                    </div>
+                  </div>
+                  <div class="table__article">SW-01-135</div>
+                  <div class="table__price"><span class="table__mob-info">Цена:</span> 188 ₴</div>
+                  <div class="table__amount">
+                    <label class="product__label">
+                      <button class="product__minus">-</button>
+                      <input type="number" class="product__input" value="1">
+                      <button class="product__plus">+</button>
+                    </label>
+                  </div>
+                  <div class="table__sum"><span class="table__mob-info">Сумма:</span> 188 ₴</div>
+                  <div class="table__delete">
+                    <svg class="icon icon__delete">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__id">001</div>
+                  <div class="table__color">
+                    <div class="table__color-img-inner">
+                      <img src="./images/colors/color4.jpg" alt="" class="table__color-img">
+                    </div>
+                  </div>
+                  <div class="table__article">SW-01-135</div>
+                  <div class="table__price"><span class="table__mob-info">Цена:</span> 188 ₴</div>
+                  <div class="table__amount">
+                    <label class="product__label">
+                      <button class="product__minus">-</button>
+                      <input type="number" class="product__input" value="1">
+                      <button class="product__plus">+</button>
+                    </label>
+                  </div>
+                  <div class="table__sum"><span class="table__mob-info">Сумма:</span>188 ₴</div>
+                  <div class="table__delete">
+                    <svg class="icon icon__delete">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Открытки «Soumissionner»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
+            </div>
+            <div class="order__min">
+              <div class="order__min-product">
+                <div class="order__min-img-inner">
+                  <img src="./images/products/product2.jpg" alt="" class="order__min-img">
+                </div>
+                <div class="order__min-info">
+                  <h3 class="order__product-name">Тут будет название данного товара в две строки</h3>
+                  <span class="order__product-article">артикул: 01-1000</span>
+                </div>
               </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <button class="product-card__more-btn button">Подробнее</button>
+              <div class="table table--order table--min">
+                <div class="table__row table__row--title">
+                  <div class="table__price">Цена</div>
+                  <div class="table__amount">Количество в заказ</div>
+                  <div class="table__sum">Сумма</div>
+                  <div class="table__hidden">
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__price"><span class="table__mob-info">Цена:</span> 188 ₴</div>
+                  <div class="table__amount">
+                    <label class="product__label">
+                      <button class="product__minus">-</button>
+                      <input type="number" class="product__input" value="1">
+                      <button class="product__plus">+</button>
+                    </label>
+                  </div>
+                  <div class="table__sum"><span class="table__mob-info">Сумма:</span> 188 ₴</div>
+                  <div class="table__delete">
+                    <svg class="icon icon__delete">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product1.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Коробка для цветов
-                  <br>«With gold love»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
+          <div class="order__total">
+            <h4 class="order__total-title">Стоимость заказа</h4>
+            <div class="order__total-info">
+              <ul class="order__total-list">
+                <li class="order__total-item">
+                  <span class="order__total-category">Кол-во товара</span>
+                  <span class="order__total-value">17</span>
+                </li>
+                <li class="order__total-item">
+                  <span class="order__total-category">Сумма</span>
+                  <span class="order__total-value">2 249 ₴</span>
+                </li>
+                <li class="order__total-item">
+                  <span class="order__total-category">Накопление</span>
+                  <span class="order__total-value">13%</span>
+                </li>
+                <li class="order__total-item">
+                  <span class="order__total-category">Доставка</span>
+                  <span class="order__total-value">Бесплатно</span>
+                </li>
+              </ul>
+              <div class="order__total-bonus">
+                <div class="order__total-bonus-have">
+                  <div class="order__total-img-inner">
+                    <img src="./images/bonus.png" alt="" class="order__total-img">
+                  </div>
+                  <p class="order__total-bonus-text">
+                    <span class="order__total-bonus-title">Бонусный счет:</span>
+                    <span class="order__total-bonus-amount">1 239 грн.</span>
+                  </p>
                 </div>
-                <button class="product-card__card-btn button">В корзину</button>
+                <button type="button" class="order__total-bonus-all">Списать всё</button>
+                <input type="text" class="order__total-bonus-input" placeholder="Введите кол-во бонусов">
               </div>
+              <div class="order__total-cost">
+                <span class="order__total-cost-text">К оплате</span>
+                <span class="order__total-cost-price">2 249 ₴</span>
+              </div>
+              <button class="order__total-done button">Оформить заказ</button>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-    </section>
-    <!-- special end  -->
-
-    <section class="special top-sale container">
-      <h2 class="special__title title">Чаще всего покупают</h2>
-      <h3 class="special__subtitle subtitle">Лидеры продаж</h3>
-      <div class="special__slider-inner top-sale__inner">
-        <div class="special__control">
-          <span class="slider__current-slide">01</span>
-          <span class="slider__amount-slide">/07</span>
-        </div>
-        <div class="special__slider top-sale__slider">
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product1.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Коробка для цветов
-                  <br>«With gold love»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
-                </div>
-                <button class="product-card__card-btn button">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product2.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">188 &#8372;</div>
-                <div class="product-card__colors">
-                  <button class="product-card__colors-btn">
-                    <svg class="icon icon__flower-colors">
-                      <use xlink:href="#flower-colors"></use>
-                    </svg>
-                  </button>
-                  <span class="product-card__colors-amount">18 цветов</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Пакеты под бутылку<br>«More hearts»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <button class="product-card__more-btn button">Подробнее</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product3.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Пакеты под бутылку<br>«More hearts»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
-                </div>
-                <button class="product-card__card-btn button">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product4.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">188 &#8372;</div>
-                <div class="product-card__colors">
-                  <button class="product-card__colors-btn">
-                    <svg class="icon icon__flower-colors">
-                      <use xlink:href="#flower-colors"></use>
-                    </svg>
-                  </button>
-                  <span class="product-card__colors-amount">18 цветов</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Керамическая чашка
-                  <br>«Ribbon»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <button class="product-card__more-btn button">Подробнее</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product5.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Калька для цветов «Opacity»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
-                </div>
-                <button class="product-card__card-btn button">В корзину</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product6.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">188 &#8372;</div>
-                <div class="product-card__colors">
-                  <button class="product-card__colors-btn">
-                    <svg class="icon icon__flower-colors">
-                      <use xlink:href="#flower-colors"></use>
-                    </svg>
-                  </button>
-                  <span class="product-card__colors-amount">18 цветов</span>
-                </div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Открытки «Soumissionner»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <button class="product-card__more-btn button">Подробнее</button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card__img-inner">
-              <img src="./images/products/product1.jpg" alt="" class="product-card__img">
-            </div>
-            <div class="product-card__info">
-              <div class="product-card__action">
-                <div class="product-card__price">88 &#8372;</div>
-                <button class="product-card__favorite">
-                  <svg class="icon icon__heart">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="product-card__text">
-                <h4 class="product-card__name">Коробка для цветов
-                  <br>«With gold love»</h4>
-                <span class="product-card__article">артикул: 01-100</span>
-                <span class="product-card__available">в наличии</span>
-              </div>
-              <div class="product-card__btns">
-                <span class="product-card__package">в упаковке: 1 штука</span>
-                <div class="product-card__amount">
-                  <span class="product-card__btn product-card__btn--minus">-</span>
-                  <input type="text" class="product-card__amount-input" value="1">
-                  <span class="product-card__btn product-card__btn--plus">+</span>
-                </div>
-                <button class="product-card__card-btn button">В корзину</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </section>
   </main>
@@ -1173,6 +794,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

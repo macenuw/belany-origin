@@ -147,6 +147,11 @@
     height: 40px;
   }
 
+  &__select-arrow {
+    width: 10px;
+    height: 6px;
+  }
+
   &__new-category,
   &__flower-category,
   &__box-category,
@@ -155,5 +160,21 @@
     width: 30px;
     height: 30px;
     fill: #CEC2B7;
+  }
+
+  &__card,
+  &__new-post,
+  &__wallet,
+  &__car,
+  &__bank {
+    width: 20px;
+    height: 20px;
+    fill: #973B3A;
+  }
+
+  &__delete {
+    width: 14px;
+    height: 16px;
+    fill: #42313A;
   }
 }

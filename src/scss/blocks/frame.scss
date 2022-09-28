@@ -1,0 +1,249 @@
+.frame {
+  background-color: #FCFAF8;
+  padding: 70px;
+
+  @media (max-width:1440px) {
+    padding: 70px 135px;
+  }
+
+  @media (max-width:1170px) {
+    padding: 25px;
+  }
+
+  &__wrapper {
+    background-color: #fff;
+    max-width: 1770px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    @media (max-width:1260px) {
+      flex-direction: column;
+      padding: 25px;
+    }
+  }
+
+  &__img-inner {
+    max-width: 270px;
+    margin-right: 30px;
+
+    @media (max-width:1260px) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: 'Cormorant';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #35242D;
+    margin-bottom: 20px;
+
+    @media (max-width:1260px) {
+      text-align: center;
+    }
+
+    &--part {
+      display: block;
+
+      @media (max-width:1260px) {
+        display: none;
+      }
+    }
+
+    &--congrats {
+      text-align: center;
+    }
+  }
+
+  .plug__title-dec {
+    display: inline-block;
+
+    @media (max-width:1260px) {
+      display: block;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: #35242D;
+    margin-bottom: 30px;
+
+    @media (max-width:1260px) {
+      text-align: center;
+    }
+
+    &--congrats {
+      text-align: center;
+    }
+  }
+
+  &__btn-inner {
+    display: flex;
+    width: 100%;
+
+    @media (max-width:550px) {
+      flex-direction: column;
+    }
+
+    &--margin {
+      margin-bottom: 30px;
+    }
+
+    &--recover {
+      @media (max-width:1260px) {
+        justify-content: center;
+      }
+    }
+
+    &--deliver {
+      @media (max-width:550px) {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__btn {
+    max-width: 140px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    @media (max-width:1260px) {
+      margin: 0 auto;
+    }
+
+    &--join {
+      max-width: 110px;
+
+      @media (max-width:550px) {
+        max-width: 100%;
+      }
+    }
+
+    &--reg {
+      max-width: 190px;
+
+      @media (max-width:550px) {
+        max-width: 100%;
+      }
+    }
+
+    &--recover {
+      @media (max-width:1260px) {
+        margin: 0;
+      }
+
+      @media (max-width:550px) {
+        max-width: 100%;
+      }
+    }
+
+    &--congrats {
+      max-width: 190px;
+      margin: 0 auto;
+    }
+
+    &--deliver {
+      @media (max-width:550px) {
+        margin: 0;
+      }
+    }
+  }
+
+  .custom-title__decor {
+    width: 15%;
+
+    @media (max-width:1630px) {
+      width: 10%;
+    }
+
+    @media (max-width:1440px) {
+      width: 0%;
+    }
+  }
+
+  .custom-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 425px;
+  }
+
+  &__input {
+    max-width: 220px;
+    width: 100%;
+    background-color: #FCFAF8;
+    border: 1px solid #F2EBE5;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #35242D;
+    padding: 10px 15px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      @media (max-width:550px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width:550px) {
+      max-width: 100%;
+    }
+  }
+
+  &__help {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    color: #35242D;
+
+    &--accent {
+      text-decoration-line: underline;
+      color: #973B3A;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @media (max-width:550px) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width:550px) {
+      text-align: center;
+    }
+  }
+}

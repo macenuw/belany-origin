@@ -34,3 +34,11 @@
     url('../fonts/CormorantInfant-Bold.woff') format('woff');
   font-display: swap;
 }
+@font-face {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/Cormorant-Bold.woff2') format('woff2'),
+    url('../fonts/Cormorant-Bold.woff') format('woff');
+  font-display: swap;
+}

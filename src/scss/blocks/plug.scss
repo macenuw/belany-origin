@@ -1,0 +1,49 @@
+.plug {
+  background-color: #FCFAF8;
+  padding: 70px;
+
+  @media (max-width:1440px) {
+    padding: 70px 135px;
+  }
+
+  @media (max-width:1170px) {
+    padding: 25px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #42313A;
+    padding: 0 25px;
+  }
+
+  &__title-dec {
+    display: block;
+    color: #973B3A;
+  }
+
+  &__inner {
+    background-color: #fff;
+    max-width: 1770px;
+    margin: 0 auto;
+  }
+
+  &__img-inner {
+    max-width: 190px;
+    width: 100%;
+
+    @media (max-width:1170px) {
+      max-width: 130px;
+    }
+  }
+
+  .custom-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 525px;
+  }
+}

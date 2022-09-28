@@ -2,13 +2,14 @@ import sliderOneForShow from './plugins/slider'
 import searchActivate from './plugins/searchActivate'
 import activateMobMenu from './plugins/mobMenu'
 import categoryFiltersAction from './plugins/categoryFilters';
-
+import onTableTrigger from './plugins/table-trigger'
 window.addEventListener("DOMContentLoaded", () => {
   activateMobMenu();
   searchActivate();
   sliderOneForShow('.top-section__slider', '.slider__btn--prev', '.slider__btn--next', '.slider__item', '.slider__dots', 'slider__dot', '.slider__current-slide', '.slider__amount-slide');
   sliderOneForShow('.new__slider', '.slider__btn--prev', '.slider__btn--next', '.slider__item', '.slider__dots', 'slider__dot', '.slider__current-slide', '.slider__amount-slide');
   categoryFiltersAction();
+  onTableTrigger();
 })
 try {
   $('.popular__slider').slick({
