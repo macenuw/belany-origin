@@ -1,0 +1,8 @@
+.cabinet {
+  background-color: #FCFAF8;
+  padding: 70px 0;
+
+  @media (max-width:730px) {
+    padding: 15px 25px;
+  }
+}

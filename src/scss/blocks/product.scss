@@ -370,6 +370,14 @@
       margin-left: 0;
       margin-right: 0;
     }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0;
+      /* <-- Apparently some margin are still there even though it's hidden */
+    }
   }
 
   &__minus,
@@ -643,6 +651,13 @@
     }
   }
 
+  &__trigger {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #35242D;
+  }
+
   &__forShow {
     display: none;
 
@@ -849,9 +864,17 @@
   }
 
   &--order {
+    border-bottom: none;
+    margin-bottom: 40px;
+
+    @media (max-width:1170px) {
+      margin-bottom: 25px;
+    }
+
     .table__id {
       max-width: 40px;
-      margin-right: 20px;
+      margin-right: 15px;
+
     }
 
     .table__color {
@@ -863,6 +886,7 @@
       justify-content: space-around;
       background-color: #FCFAF8;
       padding: 14px 20px;
+      margin-bottom: 15px;
 
       &::after {
         display: none;
@@ -986,109 +1010,6 @@
       }
     }
 
-    @media (max-width:1170px) {
-      .table__mob-info {
-        display: inline-block;
-      }
-
-      .table__row {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        position: relative;
-
-        &::after {
-          content: '';
-          width: 90%;
-          height: 1px;
-          background-color: #F2EBE5;
-          position: absolute;
-          top: 55px;
-          left: 5%;
-        }
-      }
-
-      .table__row--title {
-        display: none;
-      }
-
-      .table__id {
-        order: 1;
-        max-width: 25%;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-
-      .table__color {
-        order: 2;
-        max-width: 25%;
-        margin-right: 0;
-        margin-bottom: 20px;
-
-        .table__color-img-inner {
-          max-width: 40px;
-        }
-      }
-
-      .table__article {
-        order: 3;
-        max-width: 25%;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-
-      .table__delete {
-        order: 4;
-        margin-right: 20px;
-        margin-left: auto;
-        margin-bottom: 20px;
-
-      }
-
-      .table__price {
-        order: 5;
-        max-width: 48%;
-        margin-right: 0;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      .table__sum {
-        order: 6;
-        max-width: 48%;
-        margin-right: 0;
-        text-align: center;
-        margin-bottom: 10px;
-
-      }
-
-      .table__amount {
-        order: 7;
-        max-width: 100%;
-        width: 100%;
-
-        .product__label {
-          margin: 0 auto;
-          max-width: 484px;
-        }
-      }
-
-      .product__label {
-        max-width: 100% !important;
-        margin: 0 !important;
-        width: 100%;
-      }
-
-      .product__minus,
-      .product__plus {
-        min-width: 40px;
-      }
-
-      .product__input {
-        max-width: 100%;
-        width: 100%;
-      }
-    }
-
     @media (max-width:720px) {
 
       .table__id,
@@ -1102,6 +1023,9 @@
   }
 
   &--min {
+    margin-bottom: 0;
+    border-bottom: 1px solid #F2EBE5;
+
     @media (max-width:1170px) {
       .table__row {
         &::after {

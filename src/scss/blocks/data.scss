@@ -1,0 +1,120 @@
+.data {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+
+  @media (max-width:1020px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__item {
+    padding: 30px;
+    background-color: #FFF;
+
+    @media (max-width:1020px) {
+      padding: 25px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #35242D;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    &--info {
+      background-image: url('../images/user.svg');
+    }
+
+    &--contact {
+      background-image: url('../images/phone.svg');
+    }
+
+    &--address {
+      background-image: url('../images/address.svg');
+    }
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    border-top: 1px solid #F2EBE5;
+  }
+
+  &__label {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &--little {
+      max-width: 49%;
+
+      @media (max-width:1020px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid #F2EBE5;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #35242D;
+    background-color: #FCFAF8;
+  }
+
+  &__select {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &--little {
+      max-width: 49%;
+      width: 100%;
+
+      @media (max-width:1020px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .jq-selectbox__select {
+    font: 13px/40px 'Roboto' !important;
+    color: #35242D;
+    height: 42px;
+    background-color: #FCFAF8 !important;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    top: 18px;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__save-btn {
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #42313A;
+    padding: 13px 0;
+    background-color: #fff;
+    border: 1px solid #42313A;
+  }
+}
