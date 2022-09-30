@@ -3,7 +3,13 @@
     height: 420px;
 
     @media (max-width:950px) {
-      height: 340px;
+      height: 170px;
+    }
+  }
+
+  .double-bg__right {
+    @media (max-width:950px) {
+      height: 60%;
     }
   }
 
@@ -29,6 +35,13 @@
     .about-us__text {
       font-size: 13px;
       line-height: 18px;
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        @media (max-width:950px) {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

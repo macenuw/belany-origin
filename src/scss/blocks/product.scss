@@ -192,6 +192,7 @@
 
     @media (max-width: 1170px) {
       max-width: 100%;
+      margin-top: -5px;
     }
 
     @media (max-width: 580px) {
@@ -382,7 +383,7 @@
 
   &__minus,
   &__plus {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     background: #F8F2ED;
     border: 1px solid #F2EBE5;
@@ -403,6 +404,7 @@
     line-height: 15px;
     color: #42313A;
     max-width: 80px;
+    width: 100%;
   }
 
   &__add-btn {
@@ -428,6 +430,15 @@
 
     &--without-table {
       justify-content: center;
+      border: 1px solid #F2EBE5;
+      padding: 70px 100px;
+
+      @media (max-width:1440px) {
+        padding: 70px 25px;
+        border: none;
+        border-bottom: 1px solid #F2EBE5;
+        border-top: 1px solid #F2EBE5;
+      }
 
       .product__info-text-part,
       .product__info-records {

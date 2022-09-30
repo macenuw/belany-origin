@@ -36,6 +36,10 @@
       margin-right: 0;
       margin-bottom: 30px;
     }
+
+    @media (max-width:480px) {
+      max-width: 130px;
+    }
   }
 
   &__img {
@@ -62,6 +66,10 @@
 
     @media (max-width:1260px) {
       text-align: center;
+    }
+
+    @media (max-width:480px) {
+      font-size: 27px;
     }
 
     &--part {
@@ -95,6 +103,11 @@
 
     @media (max-width:1260px) {
       text-align: center;
+    }
+
+    @media (max-width:480px) {
+      font-size: 13px;
+      line-height: 20px;
     }
 
     &--congrats {
@@ -196,6 +209,11 @@
     align-items: center;
     justify-content: center;
     min-height: 425px;
+    padding: 70px 0;
+
+    @media (max-width:480px) {
+      padding: 0;
+    }
   }
 
   &__input {

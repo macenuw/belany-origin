@@ -41,6 +41,16 @@
     line-height: 20px;
     color: #42313A;
     padding-bottom: 40px;
+
+    @media (max-width:950px) {
+      font-size: 13px;
+      line-height: 15px;
+
+      span {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &__plus {

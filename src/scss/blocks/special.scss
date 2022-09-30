@@ -2,6 +2,11 @@
   padding-top: 70px;
   padding-bottom: 70px;
 
+  @media (max-width:480px) {
+    padding-top: 25px;
+    padding-bottom: 70px;
+  }
+
   &__slider-inner {
     position: relative;
   }
