@@ -5,6 +5,7 @@ import categoryFiltersAction from './plugins/categoryFilters';
 import onTableTrigger from './plugins/table-trigger'
 import controlActivate from './plugins/controlActivate';
 import showMyOrdersDetails from './plugins/showMyOrdersDetails';
+import Categoryes from './plugins/categoryes';
 
 window.addEventListener("DOMContentLoaded", () => {
   activateMobMenu();
@@ -15,6 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
   onTableTrigger();
   controlActivate();
   showMyOrdersDetails();
+  Categoryes();
 })
 
 try {
@@ -193,7 +195,10 @@ try {
 
 
 
-$('.select, .checkbox').styler();
+try {
+  $('.select, .checkbox').styler();
+} catch (error) {}
+
 try {
   $('.product__slider-show').slick({
     slidesToShow: 1,

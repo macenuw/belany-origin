@@ -1,4 +1,5 @@
 .icon {
+  pointer-events: none;
   &__facebook {
     width: 6px;
     height: 12px;
@@ -150,13 +151,18 @@
   &__select-arrow {
     width: 10px;
     height: 6px;
+    fill: #42313A;
   }
 
   &__new-category,
   &__flower-category,
   &__box-category,
   &__bear-category,
-  &__happy-category {
+  &__happy-category,
+  &__haire,
+  &__earing,
+  &__fly,
+  &__something {
     width: 30px;
     height: 30px;
     fill: #CEC2B7;

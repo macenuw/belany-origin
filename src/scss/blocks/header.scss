@@ -2,6 +2,10 @@
   &__top-line {
     background-color: #35242D;
 
+    .categoryes {
+      display: none;
+    }
+
     @media (max-width: 1100px) {
       display: flex;
     }
