@@ -10,6 +10,14 @@
     padding: 25px;
   }
 
+  &__title {
+    font-weight: 700 !important;
+    font-size: 120px!important;
+    line-height: 120px!important;
+    text-transform: uppercase!important;
+    margin-bottom: 0!important;
+  }
+
   &__subtitle {
     font-weight: 400;
     font-size: 15px;
@@ -21,6 +29,10 @@
 
   &__title-dec {
     display: block;
+    color: #973B3A;
+  }
+
+  &__accent {
     color: #973B3A;
   }
 
