@@ -1,6 +1,5 @@
 function showMyOrdersDetails() {
   const myOrders = document.querySelectorAll('.my-orders__item');
-  console.log(myOrders)
   myOrders.forEach(order => {
     order.addEventListener('click', (e) => {
       const orderDetails = order.querySelector('.my-orders__content');
