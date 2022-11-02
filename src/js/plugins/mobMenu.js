@@ -6,7 +6,6 @@ function activateMobMenu() {
     mobileTrigger.addEventListener('click', () => {
       mobileTrigger.classList.toggle('active');
       mobileMenu.classList.toggle('active')
-      body.classList.toggle('hidden')
     })
 
 
@@ -16,7 +15,6 @@ function activateMobMenu() {
     desktopTrigger.addEventListener('click', () => {
       desktopTrigger.classList.toggle('active');
       desktopMenu.classList.toggle('active');
-      body.classList.toggle('hidden')
     })
 
     window.addEventListener(`resize`, event => {
@@ -29,6 +27,22 @@ function activateMobMenu() {
         desktopTrigger.classList.remove('active')
       }
     }, false);
+    window.addEventListener('click', (e) => {
+      if (desktopMenu.classList.contains('active') && !e.target.closest('.categoryes__inner') && e.target != desktopTrigger) {
+        desktopTrigger.classList.remove('active');
+        desktopMenu.classList.remove('active');
+        document.querySelectorAll('.categoryes__category').forEach(item=> item.classList.remove('active'))
+        document.querySelectorAll('.categoryes__subcategory').forEach(item=> item.classList.remove('active'))
+      }
+    })
+    window.addEventListener('click', (e) => {
+      if (mobileMenu.classList.contains('active') && !e.target.closest('.categoryes__inner') && e.target != mobileTrigger) {
+        mobileTrigger.classList.toggle('active');
+        mobileMenu.classList.toggle('active')
+        document.querySelectorAll('.categoryes__category').forEach(item=> item.classList.remove('active'))
+        document.querySelectorAll('.categoryes__subcategory').forEach(item=> item.classList.remove('active'))
+      }
+    })
   } catch (e) {
     console.log(e)
   }

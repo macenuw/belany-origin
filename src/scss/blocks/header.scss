@@ -1,4 +1,30 @@
 .header {
+  transition: .3s;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 25;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    .header__top-line {
+      display: none;
+    }
+
+    .header__bottom-line {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .header__card-decor {
+      top: -18px;
+    }
+  }
+
   &__top-line {
     background-color: #35242D;
 
@@ -364,5 +390,29 @@
   to {
     opacity: 1;
     transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
