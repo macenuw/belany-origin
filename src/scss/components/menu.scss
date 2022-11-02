@@ -37,6 +37,7 @@
       top: calc(50% - 1px);
       left: calc(50% - 7px);
       transition: .3s;
+      pointer-events: none;
 
       &::after,
       &::before {
