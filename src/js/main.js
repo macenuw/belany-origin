@@ -56,13 +56,6 @@ window.addEventListener("load", () => {
             slidesToScroll: 1
           }
         },
-        {
-          breakpoint: 560,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
       ]
     });
     const popularSliderInner = document.querySelector('.popular__slider-inner');
@@ -115,13 +108,6 @@ window.addEventListener("load", () => {
             slidesToScroll: 1
           }
         },
-        {
-          breakpoint: 560,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
       ]
     });
     const popularSliderInner = document.querySelector('.special__slider-inner');
@@ -169,13 +155,6 @@ window.addEventListener("load", () => {
           breakpoint: 860,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 560,
-          settings: {
-            slidesToShow: 1,
             slidesToScroll: 1
           }
         }
